@@ -12,7 +12,6 @@
     "{{cookiecutter.application_name}}/static/vendor"
   ],
   "dependencies": {
-    "foundation": "zurb/bower-foundation#~5.2.2",
-    "roboto-slab-fontface": "*"
+    "foundation": "zurb/bower-foundation#~5.5.2"
   }
 }
