@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bower install
+# bower install
