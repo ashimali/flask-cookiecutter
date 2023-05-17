@@ -5,8 +5,8 @@ A template for flask applications using [cookiecutter](https://github.com/audrey
 
 ####Prerequisites
 
-1. Python (2 or 3)
-2. Bower (for frontend package management)
+1. Python 3
+
 
 
 ####How to use it
@@ -39,13 +39,12 @@ mkvirtualenv --python=/path/to/required/python/version [appname]
 
 Install python requirements.
 ```
-pip install -r requirements/dev.txt
+pip install -r requirements/dev-requirements.txt
 ```
 
 Once that this all done you can:
 ```
-source environment.sh
-python manage.py server
+flask run
 ```
 and have a look at http://localhost:8000
 
