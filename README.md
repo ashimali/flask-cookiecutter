@@ -1,4 +1,4 @@
-flask-in-a-box
+flask-cookiecutter
 ==================
 
 A template for flask applications using [cookiecutter](https://github.com/audreyr/cookiecutter). This cookie cutter template has been very heavily influenced by [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)
@@ -6,7 +6,7 @@ A template for flask applications using [cookiecutter](https://github.com/audrey
 ####Prerequisites
 
 1. Python 3
-
+2. pyenv - with virtualenv plugin
 
 
 ####How to use it
@@ -20,7 +20,7 @@ pip install cookiecutter
 then run:
 
 ```
-cookiecutter https://github.com/ashimali/flask-in-a-box.git
+cookiecutter https://github.com/ashimali/flask-cookiecutter.git
 ```
 
 You will be prompted to answer some basic questions about your application, including the name. The cookiecutter will create a directory for your app (named after the name you answered.)
@@ -34,15 +34,10 @@ cd into the newly create directory for the application.
 
 Create a virtualenv for your new app
 ```
-mkvirtualenv --python=/path/to/required/python/version [appname]
+
 ```
 
-Install python requirements.
-```
-pip install -r requirements/dev-requirements.txt
-```
-
-Once that this all done you can:
+Run the app
 ```
 flask run
 ```
