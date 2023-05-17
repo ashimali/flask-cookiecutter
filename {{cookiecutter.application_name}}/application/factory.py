@@ -2,7 +2,7 @@
 '''The app module, containing the app factory function.'''
 from flask import Flask, render_template
 
-# from {{cookiecutter.application_name}}.extensions import (
+# from application.extensions import (
 #     #add as needed
 # )
 
@@ -23,7 +23,7 @@ def register_errorhandlers(app):
     return None
 
 def register_blueprints(app):
-    from {{cookiecutter.application_name}}.frontend.views import frontend
+    from application.frontend.views import frontend
     app.register_blueprint(frontend)
 
 # def register_extensions(app):
