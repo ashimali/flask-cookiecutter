@@ -7,8 +7,9 @@ source {{cookiecutter.application_name}}/bin/activate
 
 
 uv pip install --upgrade pip
-uv pip compile requirements/requirements.in
-uv pip compile requirements/dev-requirements.in
-uv pip sync requirements/requirements.txt requirements/dev-requirements.txt
+uv pip compile requirements/requirements.in  -o requirements/requirements.txt
+uv pip compile requirements/dev-requirements.in  -o requirements/dev-requirements.txt
+uv pip sync requirements/requirements.txt
+uv pip sync requirements/dev-requirements.txt
 
 python -m pre_commit install
