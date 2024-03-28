@@ -2,8 +2,8 @@
 
 echo "Running post gen project script"
 
-uv venv {{cookiecutter.application_name}}
-source {{cookiecutter.application_name}}/bin/activate
+uv venv .venv
+source .venv/bin/activate
 
 uv pip install --upgrade pip
 uv pip compile requirements/requirements.in  -o requirements/requirements.txt
