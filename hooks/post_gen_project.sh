@@ -11,6 +11,7 @@ uv pip compile requirements/dev-requirements.in  -o requirements/dev-requirement
 uv pip sync requirements/requirements.txt
 uv pip sync requirements/dev-requirements.txt
 
+git init
 git add .
 git commit -am "Initial commit"
 
