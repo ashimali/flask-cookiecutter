@@ -2,7 +2,7 @@
 
 echo "Running post gen project script"
 
-uv virtualenv {{cookiecutter.application_name}}
+uv venv {{cookiecutter.application_name}}
 source {{cookiecutter.application_name}}/bin/activate
 
 
