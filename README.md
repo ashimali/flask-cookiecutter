@@ -1,49 +1,44 @@
 flask-cookiecutter
 ==================
 
-A template for flask applications using [cookiecutter](https://github.com/audreyr/cookiecutter). This cookie cutter template has been very heavily influenced by [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)
-
-####Prerequisites
-
-1. Python 3
-2. pyenv - with virtualenv plugin
+A template for flask applications using [cookiecutter](https://github.com/audreyr/cookiecutter)
 
 
-####How to use it
+#### Prerequisites
 
-Install cookiecutter (in it's own virtualenv would be a smashing idea)
-```
-mkvirtualenv cookiecutter
-pip install cookiecutter
-```
+1. python 3
+2. uv
+3. ruff
 
-then run:
+I installed uv and ruff using pipx
 
-```
-cookiecutter https://github.com/ashimali/flask-cookiecutter.git
-```
+#### How to use it
+
+Install cookiecutter (using pipx would be a fabulous idea)
+
+    pip install pipx
+    pipx ensure path
+    pipx install cookiecutter
+
+Run:
+
+    cookiecutter https://github.com/ashimali/flask-cookiecutter.git
+
 
 You will be prompted to answer some basic questions about your application, including the name. The cookiecutter will create a directory for your app (named after the name you answered.)
 
-As a post project creation step the cookiecutter will run a bower install to pull in the frontend dependencies into a vendor directory.
 
-
-####What happens next
+#### What happens next
 
 cd into the newly create directory for the application.
 
-Create a virtualenv for your new app
-```
+There's a makefile that will make use of ruff an uv
 
-```
+    make init
 
 Run the app
-```
-flask run
-```
-and have a look at http://localhost:8000
 
+    flask run
 
-#### License
-MIT
+and have a look at http://localhost:5000
 
