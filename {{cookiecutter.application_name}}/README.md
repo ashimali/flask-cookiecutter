@@ -6,13 +6,8 @@
 #### Prerequisites
 
 1. python 3
-2. uv
-3. ruff
 
-I installed uv and ruff using pipx
-
-
-There's a makefile that will make use of ruff an uv
+Create a virtualenv and activate it, and then:
 
     make init
 

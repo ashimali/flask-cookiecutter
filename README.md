@@ -7,17 +7,12 @@ A template for flask applications using [cookiecutter](https://github.com/audrey
 #### Prerequisites
 
 1. python 3
-2. uv
-3. ruff
 
-I installed uv and ruff using pipx
 
 #### How to use it
 
 Install cookiecutter (using pipx would be a fabulous idea)
 
-    pip install pipx
-    pipx ensure path
     pipx install cookiecutter
 
 Run:
@@ -32,7 +27,7 @@ You will be prompted to answer some basic questions about your application, incl
 
 cd into the newly create directory for the application.
 
-There's a makefile that will make use of ruff an uv
+Create a virtualenv and activate it, then:
 
     make init
 
