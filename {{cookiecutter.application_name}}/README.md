@@ -3,28 +3,21 @@
 ===============================
 
 
-Quickstart
-----------
+#### Prerequisites
 
-Then run the following commands to bootstrap your environment.
+1. python 3
+2. uv
+3. ruff
 
-```
-pip install -r requirements/dev.txt
-python manage.py server
-```
+I installed uv and ruff using pipx
 
 
-Deployment
-----------
+There's a makefile that will make use of ruff an uv
 
-In your production environment, make sure the ``SETTINGS`` environment variable is set to ``config.Config``.
+    make init
 
+Run the app
 
-Shell
------
+    flask run
 
-To open the interactive shell, run ::
-
-```
-python manage.py shell
-```
+and have a look at http://localhost:5000
