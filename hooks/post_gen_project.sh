@@ -12,4 +12,4 @@ uv pip compile requirements/dev-requirements.in  -o requirements/dev-requirement
 uv pip sync requirements/requirements.txt
 uv pip sync requirements/dev-requirements.txt
 
-python -m pre_commit install
+# python -m pre_commit install
