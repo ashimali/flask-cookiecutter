@@ -26,5 +26,5 @@ def register_blueprints(app):
     from application.frontend.views import frontend
     app.register_blueprint(frontend)
 
-# def register_extensions(app):
-#     pass
+def register_extensions(app):
+    pass

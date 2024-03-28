@@ -9,19 +9,12 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
 
--   repo: https://github.com/psf/black
-    rev: 23.3.0
-    hooks:
-    - id: black
-
--   repo: https://github.com/pycqa/flake8
-    rev: 6.0.0
-    hooks:
-    - id: flake8
-
-- repo: https://github.com/pycqa/isort
-  rev: 5.12.0
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.3.4
   hooks:
-    - id: isort
-      name: isort (python)
-      args: ["--profile", "black", "--filter-files"]
+    # Run the linter.
+    - id: ruff
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format

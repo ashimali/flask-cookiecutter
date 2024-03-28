@@ -1,7 +1,4 @@
 -c requirements.txt
 
 pytest
-flake8
 pre-commit
-black
-isort
