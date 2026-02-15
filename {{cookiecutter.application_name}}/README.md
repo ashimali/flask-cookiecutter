@@ -5,14 +5,16 @@
 
 #### Prerequisites
 
-1. python 3
+1. Python 3.13+
+2. [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
-Create a virtualenv and activate it, and then:
 
     make init
 
-Run the app
+This will sync dependencies and install pre-commit hooks.
 
-    flask run
+Run the app:
 
-and have a look at http://localhost:5000
+    uv run flask run
+
+and have a look at http://localhost:5050
