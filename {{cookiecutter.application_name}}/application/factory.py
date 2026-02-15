@@ -1,10 +1,7 @@
-# -*- coding: utf-8 -*-
-'''The app module, containing the app factory function.'''
+from dotenv import load_dotenv
 from flask import Flask, render_template
 
-# from application.extensions import (
-#     #add as needed
-# )
+load_dotenv()
 
 def create_app(config_filename):
     app = Flask(__name__)
