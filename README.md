@@ -6,34 +6,29 @@ A template for flask applications using [cookiecutter](https://github.com/audrey
 
 #### Prerequisites
 
-1. python 3
+1. Python 3.13+
+2. [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 
 #### How to use it
 
-Install cookiecutter (using pipx would be a fabulous idea)
-
-    pipx install cookiecutter
-
 Run:
 
-    cookiecutter https://github.com/ashimali/flask-cookiecutter.git
-
+    uvx cookiecutter https://github.com/ashimali/flask-cookiecutter.git
 
 You will be prompted to answer some basic questions about your application, including the name. The cookiecutter will create a directory for your app (named after the name you answered.)
 
 
 #### What happens next
 
-cd into the newly create directory for the application.
-
-Create a virtualenv and activate it, then:
+cd into the newly created directory for the application.
 
     make init
 
-Run the app
+This will sync dependencies and install pre-commit hooks.
 
-    flask run
+Run the app:
+
+    uv run flask run
 
 and have a look at http://localhost:5050
-
